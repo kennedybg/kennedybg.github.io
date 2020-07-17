@@ -24,45 +24,37 @@
     gtag('js', new Date());
     gtag('config', 'UA-172933506-1');
   </script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
-  <p>Tracking test</p>
-
-  <form action="contato-envia.php" method="post" id="contactform">
-    <fieldset>
-      <legend>Contato</legend>
-
-      <div class="field">
+  <div class="container">
+    <h1>Tracking test</h1>
+    <form action="index.html" class="mt-5">
+      <div class="form-group">
         <label for="nome">Nome:</label><br>
-        <input type="text" name="nome" id="nome" class="field-text" placeholder="Nome" required
+        <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" required
           aria-required="true"><br>
       </div>
-
-      <div class="field">
+      <div class="form-group">
         <label for="email">E-mail:</label><br>
-        <input type="email" name="email" id="email" class="field-text" placeholder="E-mail" required
+        <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required
           aria-required="true"><br>
       </div>
-
-      <div class="field">
+      <div class="form-group">
         <label for="telefone">Telefone:</label><br>
-        <input type="text" name="telefone" id="telefone" class="field-text" placeholder="Telefone" required
+        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone" required
           aria-required="true"><br>
       </div>
-
-      <div class="field">
+      <div class="form-group">
         <label for="mensagem">Mensagem:</label><br>
-        <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="field-area" placeholder="Mensagem" required
+        <textarea name="mensagem" class="form-control" id="mensagem" cols="30" rows="10" class="field-area" placeholder="Mensagem" required
           aria-required="true"></textarea><br>
       </div>
-
-      <div class="submit">
-        <button type="submit" id="submit">Enviar</button>
-      </div>
-    </fieldset>
-  </form>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
 </body>
 
 </html>
