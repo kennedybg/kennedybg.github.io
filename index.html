@@ -26,8 +26,13 @@
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Tracking test" />
   <meta name="twitter:description" content="" />
-  <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" as="style" onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
-  <noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"></noscript>
+  <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" as="style"
+    onload="this.onload=null;this.rel='stylesheet'" crossorigin="anonymous">
+  <noscript>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    </noscript>
 </head>
 
 <body>
@@ -56,6 +61,19 @@
         <label for="telefone">Telefone:</label><br>
         <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Telefone" required
           aria-required="true"><br>
+      </div>
+      <div class="form-group">
+        <p>Please select your preferred contact method:</p>
+        <div>
+          <input type="radio" id="contactChoice1" name="contact" value="email">
+          <label for="contactChoice1">Email</label>
+
+          <input type="radio" id="contactChoice2" name="contact" value="phone">
+          <label for="contactChoice2">Phone</label>
+
+          <input type="radio" id="contactChoice3" name="contact" value="mail">
+          <label for="contactChoice3">Mail</label>
+        </div>
       </div>
       <div class="form-group">
         <label for="mensagem">Mensagem:</label><br>
