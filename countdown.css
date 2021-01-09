@@ -1,0 +1,161 @@
+
+* {
+  box-sizing: border-box;
+}
+
+#close-countdown {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  text-align: center;
+}
+
+.flex-item-left {
+  padding-top: 13px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  padding-top: 13px;
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+#subscription-countdown {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #0FA36B 0%, #0B8F70 100%);
+  z-index:9999;
+  color: white;
+}
+
+#subscription-countdown-container {
+  width: 800px;
+  min-height: 56px;
+  margin: 0 auto;
+}
+
+#subscription-countdown-container #msg {
+  min-height: 56px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+
+#subscription-countdown-container #msg .highlight {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#subscription-countdown-container #remaining {
+  min-height: 56px;
+  color: white;
+}
+#time-remaining {
+  flex: 1;
+  min-height: 25px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.3px;
+}
+#time-remaining span span {
+  width: 68px;
+  display: inline-block;
+  letter-spacing: 0.25em;
+  padding: 0 0.25em 0 0.50em;
+  border: 1px solid;
+  border-image-source: linear-gradient(0deg, #0B8F70, rgba(216, 248, 234, 0.5)), linear-gradient(180deg, rgba(216, 248, 234, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#time-remaining-days {
+  display: none;
+  flex: 1;
+  min-height: 15px;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 11px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+#time-remaining-days span {
+  display: inline-block;
+  width: 68px;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 799px) {
+  table {
+    width: auto !important;
+  }
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+  #subscription-countdown-container {
+    width: 100%;
+    min-height: 56px;
+    margin: 0 auto;
+  }
+  .flex-item-right {
+    padding: 0;
+  }
+  .flex-item-left {
+    padding: 7px 0 6px 0;
+  }
+  #subscription-countdown-container #remaining {
+    min-height: 36px;
+    max-height: 40px;
+    padding-bottom: 10px;
+  }
+  #subscription-countdown-container #msg {
+    font-size: 10px;
+    line-height: 13.5px;
+    min-height: 21px;
+    max-height: 25px;
+  }
+  #time-remaining {
+    flex: 0;
+  }
+  #time-remaining span{
+    font-size: 10px;
+    line-height: 13.5px;
+    font-weight: 700;
+  }
+  #time-remaining span span {
+    width: 40px;
+  }
+  #time-remaining-days {
+    min-height: 11px;
+    max-height: 15px;
+  }
+  #time-remaining-days span {
+    width: 40px;
+    margin-left: 0.125em;
+    margin-right: 0.125em;
+  }
+}
+@media (max-width: 250px) {
+  #close-countdown {
+    top: 10px;
+    right: 10px;
+  }
+}
